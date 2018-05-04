@@ -1,0 +1,13 @@
+{
+	"name": "MyBook",
+	"version": "1.0",
+	"description": "Allows user to control what they see on Facebook",
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": true
+	},
+	"browser_action" : {
+		// "default_icon": "",
+	},
+	"manifest_version": 2
+}
