@@ -1,13 +1,17 @@
 {
+	"manifest_version": 2,
 	"name": "MyBook",
 	"version": "1.0",
-	"description": "Allows user to control what they see on Facebook",
-	"background": {
-		"scripts": ["background.js"],
-		"persistent": true
+	"description": "Creates detailed controls to change a user's Facebook UX",
+	"icons": {
+		"128": "icon_128.png"
 	},
-	"browser_action" : {
-		// "default_icon": "",
-	},
-	"manifest_version": 2
+	"content_scripts": [
+		{
+			"matches": [
+				"https://www.facebook.com/*", "https://m.facebook.com/*"
+			],
+			"js": ["content.js"]
+		}
+	]
 }
